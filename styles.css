@@ -2,6 +2,7 @@
     --background-color: #000000;
     --font-color: #EEEEEE;
     --text-font: "Krona One", sans-serif;
+    --signature-font: "Nothing You Could Do", cursive;
 }
 
 body {
@@ -30,15 +31,18 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    grid-template-columns: 50% 50%;
+
+
 }
 
 .banner__content__left {
     margin-top: 163px;
+    padding: 0 24px;
 }
 
 .banner__content__right {
     margin-top: 206px;
+    padding: 0 54px;
 }
 
 .banner__title {
@@ -47,8 +51,22 @@ body {
 
 .banner__text {
     font-size: 30px;
+    margin-top: 12px;
 }
 
-.banner__subtext {
+.banner__button {
     font-size: 20px;
+    background-color: var(--font-color);
+    color:#000000;
+    padding: 18px 32px;
+    border-radius: 15px;
+    display:inline-flex;
+    text-decoration: none;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.banner__signature {
+    font-family: var(--signature-font);
+    font-size: 50px;
 }
