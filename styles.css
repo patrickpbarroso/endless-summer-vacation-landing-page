@@ -31,17 +31,15 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .banner__content__left {
-    margin-top: 163px;
+    margin-top: 250px;
     padding: 0 24px;
 }
 
 .banner__content__right {
-    margin-top: 206px;
+    margin-top: 300px;
     padding: 0 54px;
 }
 
@@ -57,7 +55,7 @@ body {
 .banner__button {
     font-size: 20px;
     background-color: var(--font-color);
-    color:#000000;
+    color:var(--background-color);
     padding: 18px 32px;
     border-radius: 15px;
     display:inline-flex;
@@ -70,3 +68,45 @@ body {
     font-family: var(--signature-font);
     font-size: 50px;
 }
+
+.tracklist {
+    align-items: center;
+    text-align: center;
+    padding: 120px;
+}
+
+.tracklist__songs {
+    text-align: left;
+    list-style-type: decimal;
+    padding: 2% 40%;
+}
+
+.tracklist__songs__song {
+    padding: 3% 0;
+}
+
+.tracklist__button {
+    background-color: var(--font-color);
+    border-radius: 15px;
+    color: var(--background-color);
+    text-decoration: none;
+    display: flex;
+    margin: 0 43%;
+    padding: 1% 0;
+}
+
+.icon-spotify {
+    width: 15%;
+    text-align: center;
+}
+
+.tracklist__button__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+
+
