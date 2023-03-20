@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section class="banner">
@@ -52,22 +54,60 @@
     <section class="videos">
         <h2 class="banner__title">Official Music Videos</h2>
         <div class="videos__content">
-            <a href="https://youtu.be/G7KNmW9a75Y" class="videos_content_video">
+            <a href="https://youtu.be/G7KNmW9a75Y" class="videos_content_video" target="_blank">
                 <img src="img/flowers.png" class="videos__cover">
                 <div class="videos__info">
-                    <img src="img/youtube.png">
                     <p class="videos__text">Flowers (Official Video)</p>
                 </div>               
             </a>
-            <a href="https://youtu.be/v_4fljfr2r4" class="videos_content_video">
+            <a href="https://youtu.be/v_4fljfr2r4" class="videos_content_video" target="_blank">
                 <img src="img/river.png" class="videos__cover">
                 <div class="videos__info">
-                    <img src="img/youtube.png">
                     <p class="videos__text">River (Official Video)</p>
                 </div>
                 
             </a> 
         </div>
+    </section>
+
+    <section class="carousel">
+        <h2 class="banner__title">Other albums</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img\albums\meet.jpeg"></div>
+            <div class="swiper-slide"><img src="img\albums\breakout.png"></div>   
+            <div class="swiper-slide"><img src="img\albums\tamed.jpeg"></div>
+            <div class="swiper-slide"><img src="img\albums\bangerz.jpg"></div>
+            <div class="swiper-slide"><img src="img\albums\petz.jpeg"></div>
+            <div class="swiper-slide"><img src="img\albums\plastic.jpg"></div>
+
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+        </div>
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    spaceBetween: 40,
+                    slidesPerView: 3,
+                    pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    },
+                });
+            </script>
+
     </section>
     
 </body>

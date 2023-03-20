@@ -111,29 +111,57 @@ body {
 .videos {
     align-items: center;
     text-align: center;
+    margin-bottom: 120px;
 }
 
 .videos__content {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 120px;
-    padding: 2% 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3%;
+    
 }
 
 .videos_content_video {
     flex-direction: column;    
     text-decoration: none;
-    color: var(--font-color)
+    justify-content: space-between;
+    color: var(--font-color);
+}
+
+.videos__info {
+    align-items: center;
+    text-align: center;
+    gap: 2%;
 }
 
 .videos__text {
     margin-top: 3%;
+    
 }
 
-.videos__info {
-    display: flex;
-    gap: 2%;
+.carousel {
+    text-align: center;
+    align-items: center;
+}
+
+.swiper {
+    padding: 2% 2%;
+}
+
+.swiper-slide img{
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
 }
 
 
