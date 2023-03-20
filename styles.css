@@ -108,5 +108,35 @@ body {
     gap: 10px;
 }
 
+.videos {
+    align-items: center;
+    text-align: center;
+}
+
+.videos__content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 120px;
+    padding: 2% 20%;
+}
+
+.videos_content_video {
+    flex-direction: column;    
+    text-decoration: none;
+    color: var(--font-color)
+}
+
+.videos__text {
+    margin-top: 3%;
+}
+
+.videos__info {
+    display: flex;
+    gap: 2%;
+}
+
+
+
 
 
